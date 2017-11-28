@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-'No.476'
+'No.476 in leekcode'
 __author__ = 'wenqingy'
 
 class Solution(object):
