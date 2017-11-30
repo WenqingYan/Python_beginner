@@ -16,18 +16,35 @@ class Solution(object):
             else:
                 continue
 
-        for j in range(last,0,-1):
+        for j in range(last,-1,-1):
             if self.astr[j] == ' ':
                 flag = j
                 break
+            elif j == 0:
+                flag = -1
 
         return last - flag
 
 #test
-a = Solution('Today is a new start')
-b = Solution('Today is a new start                  ')
-a.checkLast()
-b.checkLast()
-                        
+#a = Solution('Today is a new start')
+#b = Solution('Today is a new start                  ')
+#a.checkLast()
+#b.checkLast()
 
+# input part
+def main():
+    a = input('Please input new data:\n')
+    b = Solution(a)
+    print(b.checkLast())
 
+# main function for testing
+main()
+
+#newcoder
+x = input()
+for i in range(len(x)-1, -1, -1):
+    if x[i] == ' ':
+        break
+    elif i == 0:
+        i = -1
+print(len(x)-i-1)

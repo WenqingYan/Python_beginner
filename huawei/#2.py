@@ -17,8 +17,19 @@ class Solution(object):
         return count
 
 #test
-a = Solution('ABcdea 12', 'a')
-a.countTag()
+#a = Solution('ABcdea 12', 'a')
+#a.countTag()
 
+def main():
+    a, b = input().split( )
+    item = Solution(a,b)
+    print(item.countTag())
 
+main()
 
+#newcoder
+class Solution()#above code
+x = input()
+y = input()
+ins = Solution(x, y)
+print(ins.countTag())

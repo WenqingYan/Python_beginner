@@ -16,13 +16,30 @@ class Solution(object):
                 output.append(i)
             else:
                 continue
-        return len(output),sorted(output)
+        return sorted(output)
 
 #test
 n = 5
 list = [1, 2, 3, 4, 4]
 a = Solution(n, list)
-a.removeRank()
+b = a.removeRank()
+for i in b:
+    print(i)
+
+
+#newcoder
+while True:
+    try:
+        n = int(input()) #输入数据的个数
+        result = set()
+        for i in range(n):
+            result.add(int(input()))#输入相应的数据
+        
+        sortres = sorted(list(result))
+        for i in sortres:
+            print(i)
+    except:
+        break
 
 
 
