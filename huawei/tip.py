@@ -55,3 +55,12 @@ a
 for i in a:
     print(i)
 
+
+#多个数据输入不预先给出数据个数
+#题目未给出个数，每个数据一行，未提及终止输入的方法
+while True:
+    string = input()
+    if string == '':#enter enter 两次则退出
+        break
+    pass
+
