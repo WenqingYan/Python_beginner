@@ -14,6 +14,14 @@ while True:
     except:
         break
 
+#多个对象， 一个对象多个属性
+N,m = map(int,raw_input().split())
+goods = []
+for i in range(m):
+    goods.append(list(map(int,raw_input().split())))
+goods[0][0]#第一个对象的第一个属性
+
+
 #多个输入 同行用空格隔开
 while True:
     try:
@@ -40,4 +48,10 @@ print()
 x = input()
 y = intput()
 
+a = set()
+a.add('hello')
+a.add('cristina')
+a
+for i in a:
+    print(i)
 
