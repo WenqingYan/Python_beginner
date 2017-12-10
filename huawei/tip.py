@@ -64,3 +64,11 @@ while True:
         break
     pass
 
+#也可以直接写单个的
+while True:
+    try:
+        input
+        print
+        pass
+    except:
+        break
